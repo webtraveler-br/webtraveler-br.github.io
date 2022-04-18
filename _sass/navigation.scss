@@ -1,0 +1,38 @@
+.fixed-nav {
+    width: 100%;
+    position: sticky;
+    background-color: $navigation-color;
+    padding: 25px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .brand {
+            h1 {
+                line-height: normal;
+                font-size: 30px;
+                color: #ddddde;
+            }
+        }
+        .links {
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                height: 50px;
+                outline: 1px solid $secondary-color;
+                border-radius: 4px;
+                margin: 0 10px;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 3px;
+                color: $secondary-color;
+            }
+            a:hover {
+                background-color: $secondary-color;
+                color: $navigation-color;
+                transition: 0.3s;
+            }
+        }
+    }
+}

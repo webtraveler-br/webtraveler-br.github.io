@@ -1,0 +1,58 @@
+$primary-color: #110620;
+$secondary-color: #ffd900;
+$navigation-color: #0d0a0f;
+$text-color: #a4b1cd;
+
+@font-face {
+    font-family: 'Anurati';
+    src: url(/assets/fonts/anurati/anurati-regular.otf) format("opentype");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $primary-color;
+    color: white;
+}
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+h1,h2 {
+    margin: 0;
+}
+a, a:link, a:visited, a:hover, a:active {
+    color: white;
+    text-decoration: none;
+}
+.home {
+    .main-image {
+        width: 100%;
+        height: calc(100vw * 0.5625);
+        background-image: url(/assets/images/apavoro.png);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateZ(0);
+        #parallax-title {
+            text-transform: uppercase;
+            width: 100%;
+            font-family: 'Anurati';
+            font-size: 80px;
+            font-weight: 500;
+            text-align: center;
+            position: absolute;
+            top: 15%;
+            z-index: 10;
+        }
+        #terra {
+            width: 100%;
+            margin-top: 2px;
+            z-index: 20;
+            position: relative;
+        }
+    }
+}
